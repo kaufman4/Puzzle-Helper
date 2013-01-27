@@ -1,0 +1,204 @@
+Die Konsolenanwendung Puzzle-Helper versucht mehrere beliebige Formen in einem beliebig grossem Spielfeld anzuordnen.
+Somit ist es moeglich Spiele wie "Block Puzzle" automatisch zu loesen, falls man bei einem Level Hilfe benoetigt.
+
+
+Ablauf:
+1. Spalten Anzahl des Spielfelds eingeben
+2. Zeilen Anzahl des Spielfelds eingeben
+
+3. Anzahl der Figuren eingeben
+Achtung: Jede Figur ist ein Rechteck, d.h. es muessen auch die leeren Felder eingegeben werden (siehe Bsp.)!!
+3.1 Farbe der jeweiligen Figur eingeben
+3.2 Spalten/Zeilen-Anzahl der Figur eingeben
+3.3 Die einzelnen Felder dieser Figur fuellen
+	
+Bsp: 
+# # # #
+  # #
+# # # #
+
+Diese Figur hat 4 Spalten und 3 Zeilen.
+
+Eingabe der Koordinaten von links oben nach rechts unten.
+1 1 1 1
+0 1 1 0
+1 1 1 1
+
+1=Feld dieser Figur ist belegt
+0=Feld dieser Figur ist leer
+
+Alle Figuren werden nacheinander definiert. Nachdem alle Figuren definiert wurden, werden alle moeglichen Anordnungen der Figuren im Spielfeld getestet 
+und die Loesung bei Erfolg ausgegeben.
+
+
+
+Ausfuehrliches Beispiel, dass das Puzzel von Beispiel-blockpuzzle.jpg loest:
+
+
+Eingabe der Spielfeldgroese
+Spalten: 5
+Zeilen: 4
+ nix  nix  nix  nix  nix 
+ nix  nix  nix  nix  nix 
+ nix  nix  nix  nix  nix 
+ nix  nix  nix  nix  nix 
+
+Anzahl der Figuren: 6
+Farbe: gelb
+
+Eingabe der Figurgroese
+Spalten: 2
+Zeilen: 2
+
+koordinaten: 
+Zeile: 0 Spalte: 0
+1
+koordinaten: 
+Zeile: 0 Spalte: 1
+1
+koordinaten: 
+Zeile: 1 Spalte: 0
+1
+koordinaten: 
+Zeile: 1 Spalte: 1
+1
+ gelb  gelb 
+ gelb  gelb 
+
+Form korrekt? (J/N): j
+
+Farbe: gruen
+Eingabe der Figurgroese
+Spalten: 3
+Zeilen: 1
+koordinaten: 
+Zeile: 0 Spalte: 0
+1
+koordinaten: 
+Zeile: 0 Spalte: 1
+1
+koordinaten: 
+Zeile: 0 Spalte: 2
+1
+ gruen  gruen  gruen 
+
+Form korrekt? (J/N): j
+
+Farbe: rot
+Eingabe der Figurgroese
+Spalten: 2
+Zeilen: 1
+koordinaten: 
+Zeile: 0 Spalte: 0
+1
+koordinaten: 
+Zeile: 0 Spalte: 1
+1
+ rot  rot 
+
+Form korrekt? (J/N): j
+
+Farbe: pink
+Eingabe der Figurgroese
+Spalten: 2
+Zeilen: 3
+koordinaten: 
+Zeile: 0 Spalte: 0
+0
+koordinaten: 
+Zeile: 0 Spalte: 1
+1
+koordinaten: 
+Zeile: 1 Spalte: 0
+1
+koordinaten: 
+Zeile: 1 Spalte: 1
+1
+koordinaten: 
+Zeile: 2 Spalte: 0
+0
+koordinaten: 
+Zeile: 2 Spalte: 1
+1
+ nix  pink 
+ pink  pink 
+ nix  pink 
+
+Form korrekt? (J/N): j
+
+Farbe: lila
+Eingabe der Figurgroese
+Spalten: 2
+Zeilen: 2
+koordinaten: 
+Zeile: 0 Spalte: 0
+1
+koordinaten: 
+Zeile: 0 Spalte: 1
+0
+koordinaten: 
+Zeile: 1 Spalte: 0
+1
+koordinaten: 
+Zeile: 1 Spalte: 1
+1
+ lila  nix 
+ lila  lila 
+
+Form korrekt? (J/N): j
+
+Farbe: blau
+Eingabe der Figurgroese
+Spalten: 3
+Zeilen: 2
+koordinaten: 
+Zeile: 0 Spalte: 0
+1
+koordinaten: 
+Zeile: 0 Spalte: 1
+1
+koordinaten: 
+Zeile: 0 Spalte: 2
+0
+koordinaten: 
+Zeile: 1 Spalte: 0
+0
+koordinaten: 
+Zeile: 1 Spalte: 1
+1
+koordinaten: 
+Zeile: 1 Spalte: 2
+1
+ blau  blau  nix 
+ nix  blau  blau 
+
+Form korrekt? (J/N): j
+
+ gelb  gelb 
+ gelb  gelb 
+
+
+ gruen  gruen  gruen 
+
+
+ rot  rot 
+
+
+ nix  pink 
+ pink  pink 
+ nix  pink 
+
+
+ lila  nix 
+ lila  lila 
+
+
+ blau  blau  nix 
+ nix  blau  blau 
+
+
+Spiel geloest in 6 Versuchen!
+ gelb  gelb  gruen  gruen  gruen 
+ gelb  gelb  rot  rot  pink 
+ lila  blau  blau  pink  pink 
+ lila  lila  blau  blau  pink 
